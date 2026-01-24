@@ -1,0 +1,140 @@
+
+.size-container {
+    width: 100%;          
+    margin: 0 auto;              /* Elimina márgenes laterales */
+    padding: 4rem 0;        /* Padding arriba/abajo para que no pegue al borde vertical */
+    overflow-x: hidden;     /* Evita scroll horizontal innecesario */
+    background-color: #000000; /* Opcional: un fondo ligero para diferenciar la sección */
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* El Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Mitad y mitad */
+  gap: 30px;
+  align-items: center; /* Centra el texto verticalmente con la imagen */
+}
+
+/* Contenedor del Carrusel (Quitamos el fondo blanco y sombra si no la quieres) */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del Texto (Quitamos el display: flex que rompía todo) */
+.body-text-container {
+  padding: 20px;
+  text-align:   left; /* Alineación estándar para lectura */
+  
+}
+
+.bodyy {
+  font-size: 1.05rem;
+  line-height: 1.7; 
+  text-align: justify;
+  margin: 0;
+  color: #333;
+}
+
+
+
+.bodyy mark {
+  background-color: #f3dfa2;
+  color: #000000;
+  padding: 2px 6px;
+  margin: 0 2px;
+  display: inline; 
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+
+.carrousel-image {
+
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);}
+
+  .size-container {
+    width: 100%;          
+    margin: 0 auto;
+    padding: 4rem 0;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* El Grid corregido */
+.grid-container {
+    display: grid;
+    /* Por defecto 1 columna para móviles */
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    align-items: center; /* Centra verticalmente los elementos de las columnas */
+    max-width: 1200px;   /* Evita que el contenido se estire demasiado */
+    margin: 0 auto;      /* Centra el grid mismo */
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* Mitad y mitad en desktop */
+    }
+}
+
+.publication-image {
+    display: block;     
+    margin: 0 auto;    
+    max-width: 100%;    
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.body-text-container {
+    padding: 20px;
+    text-align: justify; 
+
+}
+
+.bodyycerts {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center; 
+    line-height: 1.5;
+    color: #000000;
+}
+
+
+.bodyy {
+    font-size: 1.05rem;
+    line-height: 1.7; 
+    text-align: justify;
+    color: #333;
+}
+
+.botones{
+    margin-top: 15px;
+     margin-bottom: 10px;
+     margin-top: 10px;
+      font-weight: 600;
+      text-align: left; 
+      background-color: #f3dfa2;
+}
