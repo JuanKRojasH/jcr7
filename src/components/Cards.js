@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import { CgEnter } from "react-icons/cg";
+
 
 export const Cards = () => {
   const carouselRef = useRef(null);
