@@ -42,3 +42,11 @@
   
 
 }
+
+.carrousel-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;   /* llena el espacio sin deformarse */
+  border-radius: 10px; /* opcional: se ve más bonito */
+  
+}
